@@ -16,6 +16,10 @@
  * TODO:
  *	* Make this into a jQuery plugin.
  *	* Accept parameters for the selectors.
+ *	* Make sure we are being passed selectors for checkboxes. Abort early if not.
+ *	* Can the selectors be made live for the more dynamic forms?
+ *	* Cater for groups of checkboxes that may share the same selectors, i.e. a selector
+ *	  for a group with the master being a selector in the context of the group wrapper.
  */
 
 jQuery(document).ready(function($) {
@@ -32,10 +36,9 @@ jQuery(document).ready(function($) {
 	});
 
 	$(group_selector).click(function() {
-		/* 
-			If all checkboxes are unchecked, then make sure the master is checked,
-			otherwise it should be unchecked.
-		*/
+		// If all checkboxes are checked, then make sure the master is checked,
+		// otherwise the master should be unchecked.
+
 		// True if all options selected
 		var master_status = true;
 
@@ -43,8 +46,13 @@ jQuery(document).ready(function($) {
 		var master = $(master_selector)[0];
 
 		$(group_selector).each(function() {
+			// If this checkbox is not checked, and we are not
+			// looking at the master checkbox, then the master needs to be unchecked.
 			if (this !== master && this.checked == false) {
 				master_status = false;
+
+				// No need to look any further.
+				return false;
 			}
 		});
 
