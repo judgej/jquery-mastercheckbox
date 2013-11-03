@@ -14,5 +14,9 @@ The plugin is written with thhe following features:
 * As many groups as you like are mermitted on a page, and each group can use identical
   selectors for simplicity.
 
-  See index.html for a demo and example syntax.
+There are lots of tutorials and examples of how to do this, but I could not find a simple
+plugin that encapsulated all the best features and supported flexible selectors to make
+it simple to use and reuse. This is why the plugin was created.
+
+See index.html for a demo and example syntax.
 
