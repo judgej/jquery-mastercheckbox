@@ -3,14 +3,49 @@
     <head>
         <title>Demo Master Checkbox</title>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-        <script type="text/javascript" src="jquert.mastercheckbox.js"></script>
+        <script type="text/javascript" src="jquery.mastercheckbox.js"></script>
+        <script type="text/javascript">
+            // Or just run it at the bottom of the page.
+            /*
+            jQuery(document).ready(function($) {
+                $('.check-group').masterCheckbox({master_sub_selector: '.master'});
+            });
+            */
+        </script>
     </head>
     <body>
-        <fieldset id="set-1">
+        <h1>Demo Master Checkbox</h1>
+
+        <p>
+            Both checkbox groups are wrapped in a fieldset.check-group element and are added to the
+            plugin with a single statement.
+            Any selector can be used, so long as it matches elements that wrap one or more entire
+            groups of related checkboxes:
+        </p>
+
+        <code>
+            $('.check-group').masterCheckbox();
+        </code>
+
+        <p>
+            The master checkbox in Set 1 is wrapped in a p.master element.
+            The master checkbox in Set 2 is a input.master element.
+            The default ".master" selector can be overridden as follows, but it is useful to note
+            that the selector works within the contect of the group wrapper, and can point
+            directly to the master checkbox or any element that wraps it:
+        </p>
+
+        <code>
+            $('.check-group').masterCheckbox({master_sub_selector: '.my-master'});
+        </code>
+
+        <h2>set-1</h2>
+
+        <fieldset id="set-1" class="check-group">
             <p class="master">
                 <label>
                     <input type="checkbox" value="1" />
-                    Master Checkbox
+                    Master Checkbox Set 1
                 </label>
             </p>
             <p>
@@ -32,5 +67,38 @@
                 </label>
             </p>
         </fieldset>
+
+        <h2>set-2</h2>
+
+        <fieldset id="set-2" class="check-group">
+            <p>
+                <label>
+                    <input type="checkbox" value="1" class="master" />
+                    Master Checkbox Set 2
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="1" />
+                    Option 1
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="1" />
+                    Option 2
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="1" />
+                    Option 3
+                </label>
+            </p>
+        </fieldset>
+
+        <script type="text/javascript">
+            $('.check-group').masterCheckbox();
+        </script>
     </body>
 </html>
