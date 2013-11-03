@@ -60,6 +60,7 @@
 				master_checkbox.data(settings.group_key_name, group_checkboxes);
 
 				// Store the group against any group checkbox, including the master.
+				// Also store the master element against the other group checkboxes.
 				group_checkboxes
 					.data(settings.group_key_name, group_checkboxes)
 					.data(settings.master_key_name, master_checkbox);
