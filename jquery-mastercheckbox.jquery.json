@@ -3,7 +3,9 @@
 "title": "jQuery Master Checkbox",
 "description": "jQuery plugin to support select/deselect all on groups of checkboxes.",
 "keywords": [
-"checkboxes"
+"checkboxes",
+"form",
+"input"
 ],
 "version": "1.0.0",
 "author": {
