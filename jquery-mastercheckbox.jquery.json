@@ -1,0 +1,33 @@
+{
+"name": "jquery-mastercheckbox",
+"title": "jQuery Master Checkbox",
+"description": "jQuery plugin to support select/deselect all on groups of checkboxes.",
+"keywords": [
+"checkboxes"
+],
+"version": "1.0.0",
+"author": {
+"name": "Jason Judge",
+"url": "https://github.com/judgej"
+},
+"maintainers": [
+{
+"name": "Jason Judge",
+"email": "jason.judge@academe.co.uk",
+"url": "http://academe.co.uk"
+}
+],
+"licenses": [
+{
+"type": "MIT",
+"url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+}
+],
+"bugs": "https://github.com/judgej/jquery-mastercheckbox/issues",
+"homepage": "https://github.com/judgej/jquery-mastercheckbox",
+"docs": "https://github.com/judgej/jquery-mastercheckbox",
+"download": "http://code.jquery.com/#jquery-mastercheckbox",
+"dependencies": {
+"jquery": ">=1.5"
+}
+}
