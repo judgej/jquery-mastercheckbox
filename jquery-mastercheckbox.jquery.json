@@ -3,7 +3,7 @@
 "title": "jQuery Master Checkbox",
 "description": "A jQuery plugin to support check/uncheck of multiple checkboxes in groups, using a master checkbox. It aims to be very simple to use and robust.",
 "keywords": [
-"checkboxes",
+"checkbox",
 "form",
 "input"
 ],
