@@ -3,6 +3,8 @@ jquery-mastercheckbox
 
 This is a simple plugin that allows you to designate a single checkbox in a list
 or group of checkboxes to be the the master "select all" or "deselect all" checkbox.
+This plugin is simple in operation, simple to use, and addresses many of the issues
+that similar plugins have.
 
 The plugin has the following features:
 
@@ -27,7 +29,7 @@ Toggling the first checkbox will toggle the last three checkboxes. Changing the 
 any of the last three checkboxes will ensure the first checkbox is set/reset, depending on
 the group's state.
 
-A demo can be found here:
+A demo can be found here, or simply download this repository and view index.html:
 
 http://www.acadweb.co.uk/mastercheckbox/
 
