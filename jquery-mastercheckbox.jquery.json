@@ -1,7 +1,7 @@
 {
 "name": "jquery-mastercheckbox",
 "title": "jQuery Master Checkbox",
-"description": "jQuery plugin to support select/deselect all on groups of checkboxes.",
+"description": "A jQuery plugin to support check/uncheck of multiple checkboxes in groups, using a master checkbox. It aims to be very simple to use and robust.",
 "keywords": [
 "checkboxes",
 "form",
